@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "picture": "https://i.pravatar.cc/150?img=3",
+    "email": "john@example.com",
+    "days_since_contact": 12,
+    "status": "overdue",
+    "tags": ["college", "close friend"],
+    "bio": "Met in university. Love hiking together.",
+    "goal": 14,
+    "next_due_date": "2025-07-20"
+  },
+  {
+    "id": 2,
+    "name": "Sarah Ahmed",
+    "picture": "https://example.com/photo2.jpg",
+    "email": "sarah@example.com",
+    "days_since_contact": 5,
+    "status": "on-track",
+    "tags": ["work", "team"],
+    "bio": "Colleague from office. Works in design team.",
+    "goal": 10,
+    "next_due_date": "2025-07-25"
+  },
+  {
+    "id": 3,
+    "name": "Rahim Uddin",
+    "picture": "https://example.com/photo3.jpg",
+    "email": "rahim@example.com",
+    "days_since_contact": 20,
+    "status": "overdue",
+    "tags": ["school", "friend"],
+    "bio": "School friend. Plays cricket together.",
+    "goal": 15,
+    "next_due_date": "2025-07-15"
+  },
+  {
+    "id": 4,
+    "name": "Emily Clark",
+    "picture": "https://example.com/photo4.jpg",
+    "email": "emily@example.com",
+    "days_since_contact": 2,
+    "status": "active",
+    "tags": ["gym", "fitness"],
+    "bio": "Gym partner. Morning workout sessions.",
+    "goal": 7,
+    "next_due_date": "2025-07-28"
+  },
+  {
+    "id": 5,
+    "name": "Karim Hasan",
+    "picture": "https://example.com/photo5.jpg",
+    "email": "karim@example.com",
+    "days_since_contact": 30,
+    "status": "overdue",
+    "tags": ["business", "client"],
+    "bio": "Client from freelancing project.",
+    "goal": 20,
+    "next_due_date": "2025-07-10"
+  },
+  {
+    "id": 6,
+    "name": "Nusrat Jahan",
+    "picture": "https://example.com/photo6.jpg",
+    "email": "nusrat@example.com",
+    "days_since_contact": 8,
+    "status": "on-track",
+    "tags": ["family", "cousin"],
+    "bio": "Cousin. Meet during family events.",
+    "goal": 12,
+    "next_due_date": "2025-07-22"
+  },
+  {
+    "id": 7,
+    "name": "David Miller",
+    "picture": "https://example.com/photo7.jpg",
+    "email": "david@example.com",
+    "days_since_contact": 18,
+    "status": "overdue",
+    "tags": ["travel", "friend"],
+    "bio": "Met during a trip. Loves adventure.",
+    "goal": 14,
+    "next_due_date": "2025-07-18"
+  }
+]
