@@ -1,5 +1,5 @@
 import React from 'react';
-import { Cell, Legend, Pie, PieChart } from 'recharts';
+import { Legend, Pie, PieChart } from 'recharts';
 
 const TimelineChart = ({chartData}) => {
 

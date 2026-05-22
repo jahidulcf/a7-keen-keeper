@@ -1,9 +1,21 @@
+'use client';
+
 import profiles from "@/data/profiles.json";
 import { Plus } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 
 export default function Home() {
+
+  const [timeline] = useState(() => {
+      if (typeof window !== "undefined") {
+          return JSON.parse(localStorage.getItem("timeline") || "[]");
+      }
+
+      return [];
+  });
+
   return (
     <>
       <div className="bg-[#F8FAFC] py-20 space-y-10">
@@ -30,7 +42,7 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col items-center justify-center text-center shadow border bg-white border-gray-100 px-4 py-8 rounded-lg">
-            <p className="text-4xl font-semibold text-[#244D3F]">todo[0]</p>
+            <p className="text-4xl font-semibold text-[#244D3F]">{timeline.length}</p>
             <p className="text-[#64748B]">Interactions this month</p>
           </div>
         </div>
