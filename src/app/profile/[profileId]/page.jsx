@@ -1,3 +1,4 @@
+
 import ProfileClient from "@/components/ProfileClient";
 import profiles from "@/data/profiles.json";
 
