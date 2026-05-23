@@ -34,6 +34,13 @@ const ProfileClient = ({ profile }) => {
         "on-track": "text-white bg-yellow-600",
         "overdue": "text-white bg-red-600",
     };
+    const formatDate = (dateString) => {
+        return new Date(dateString).toLocaleDateString("en-US", {
+            month: "short",
+            day: "numeric",
+            year: "numeric",
+        });
+    }
 
     return (
         <div className="container mx-auto py-20 flex gap-6 items-start">
@@ -75,7 +82,7 @@ const ProfileClient = ({ profile }) => {
                     </div>
         
                     <div className="flex flex-col items-center justify-center text-center shadow border bg-white border-gray-100 px-4 py-8 rounded-lg">
-                    <p className="text-4xl font-semibold text-[#244D3F]">{profile.next_due_date}</p>
+                    <p className="text-4xl font-semibold text-[#244D3F]">{formatDate(profile.next_due_date)}</p>
                     <p className="text-[#64748B]">Next Due</p>
                     </div>
                 </div>
