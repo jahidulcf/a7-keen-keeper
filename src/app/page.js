@@ -4,17 +4,16 @@ import profiles from "@/data/profiles.json";
 import { Plus } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Home() {
 
-  const [timeline] = useState(() => {
-      if (typeof window !== "undefined") {
-          return JSON.parse(localStorage.getItem("timeline") || "[]");
-      }
+  const [timeline, setimeline] = useState([]);
 
-      return [];
-  });
+  useEffect(() => {
+    const storedTimeline = JSON.parse(localStorage.getItem("timeline") || "[]");
+    setimeline(storedTimeline);
+  }, []);
 
   return (
     <>
