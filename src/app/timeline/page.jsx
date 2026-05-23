@@ -36,6 +36,9 @@ const Timeline = () => {
     return (
         <div>
             <h1 className='text-3xl font-bold'>timeline</h1>
+            {timeline.length === 0 && (
+                <p className='text-gray-500 mt-4'>No timeline items found.</p>
+            )}
             <div className='space-y-4 p-4'>
                 {timeline.map((t) => {
                     return (

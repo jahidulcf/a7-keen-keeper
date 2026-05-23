@@ -36,6 +36,7 @@ const State = () => {
     return (
         <div className='space-y-4 p-4'>
             <h2 className='text-4xl'>state</h2>
+            { timeline.length === 0 && <p className='text-2xl mt-4'>No data to show</p> }
             <div className='flex justify-center'>
                 <TimelineChart chartData={chartData} />
             </div>
