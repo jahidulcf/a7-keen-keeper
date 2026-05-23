@@ -4,7 +4,7 @@ import TimelineChart from '@/components/TimelineChart';
 import React, { useState } from 'react';
 
 const State = () => {
-    const COLORS = ['#0088FE', '#00C49F', '#FFBB28'];
+    const COLORS = ['#244D3F', '#8928D9', '#32CD32'];
 
     const [timeline] = useState(() => {
         if (typeof window !== "undefined") {
